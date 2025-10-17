@@ -1,0 +1,1540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Way of the Bodhisattva - Complete Reference</title>
+    <style>
+        @media print {
+            body { font-size: 11pt; }
+            .page-break { page-break-after: always; }
+            .no-print { display: none; }
+            @page { margin: 2cm; }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Crimson Text', 'Georgia', 'Times New Roman', serif;
+            line-height: 1.8;
+            color: #1a1a1a;
+            background: #fafaf8;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 3rem;
+        }
+
+        .title-page {
+            text-align: center;
+            padding: 10rem 0 8rem 0;
+            border-bottom: 3px solid #2a2a2a;
+            margin-bottom: 4rem;
+        }
+
+        h1.book-title {
+            font-size: 3.5rem;
+            font-weight: 400;
+            letter-spacing: 3px;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            color: #1a1a1a;
+        }
+
+        .subtitle {
+            font-size: 1.6rem;
+            font-style: italic;
+            color: #4a4a4a;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .byline {
+            font-size: 1.1rem;
+            margin-top: 4rem;
+            color: #666;
+            font-weight: 400;
+        }
+
+        h2 {
+            font-size: 2.25rem;
+            font-weight: 400;
+            margin: 4rem 0 2rem 0;
+            padding: 1.5rem 2rem;
+            background: linear-gradient(135deg, #5e8a6f 0%, #4a6d5a 100%);
+            color: white;
+            border-radius: 12px;
+            letter-spacing: 1px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        h3 {
+            font-size: 1.75rem;
+            font-weight: 500;
+            margin: 3rem 0 1.5rem 0;
+            color: #2a2a2a;
+            padding-left: 1rem;
+            border-left: 4px solid #5e8a6f;
+        }
+
+        h4 {
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin: 2rem 0 1rem 0;
+            color: #3a3a3a;
+        }
+
+        p {
+            margin-bottom: 1.25rem;
+            text-align: justify;
+            hyphens: auto;
+            font-size: 1.05rem;
+        }
+
+        .concept-box {
+            background: linear-gradient(135deg, #e8f5e9 0%, #f1f8f2 100%);
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 12px;
+            border-left: 5px solid #5e8a6f;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .definition-box {
+            background: linear-gradient(135deg, #e3f2fd 0%, #f1f7fc 100%);
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 12px;
+            border-left: 5px solid #1976d2;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .practice-box {
+            background: linear-gradient(135deg, #fff3e0 0%, #fef8f0 100%);
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 12px;
+            border-left: 5px solid #f57f17;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .warning-box {
+            background: linear-gradient(135deg, #ffebee 0%, #fef5f6 100%);
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 12px;
+            border-left: 5px solid #e53935;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .intro-section {
+            background: white;
+            padding: 2.5rem;
+            margin: 2rem 0;
+            border-left: 4px solid #2a2a2a;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+
+        .node-entry {
+            margin: 3rem 0;
+            padding: 2.5rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            border: 1px solid #e5e5e5;
+        }
+
+        .node-header {
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, #f5f5f5 0%, #fafafa 100%);
+            border-radius: 8px;
+            border-left: 4px solid #5e8a6f;
+        }
+
+        .node-id {
+            font-family: 'Courier New', monospace;
+            font-size: 0.95rem;
+            color: #5e8a6f;
+            margin-bottom: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .node-name {
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-bottom: 0;
+            color: #1a1a1a;
+            line-height: 1.3;
+        }
+
+        .node-teaching {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            margin: 1.5rem 0;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, #e8f5e9 0%, #f1f8f2 100%);
+            border-left: 3px solid #5e8a6f;
+            border-radius: 8px;
+            font-style: italic;
+        }
+
+        .node-commentary {
+            font-size: 1.05rem;
+            line-height: 1.85;
+            margin-bottom: 1.5rem;
+            color: #2a2a2a;
+        }
+
+        .node-connections {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: #f9f9f7;
+            border-radius: 8px;
+        }
+
+        .connections-label {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #666;
+            margin-bottom: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .connection-link {
+            display: inline-block;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            color: #2a2a2a;
+            background: white;
+            padding: 0.4rem 0.8rem;
+            margin: 0.25rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+
+        .connection-link:hover {
+            background: #5e8a6f;
+            color: white;
+            border-color: #5e8a6f;
+        }
+
+        .node-meta {
+            font-size: 0.95rem;
+            color: #666;
+            font-style: italic;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e5e5e5;
+        }
+
+        .arc-diagram {
+            padding: 2rem;
+            background: white;
+            border-radius: 12px;
+            margin: 2rem 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .arc-flow {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 2rem 0;
+            padding: 2rem;
+            background: #f9f9f7;
+            border-radius: 8px;
+        }
+
+        .arc-node-box {
+            background: linear-gradient(135deg, #e8f5e9 0%, #f1f8f2 100%);
+            padding: 0.75rem 1.25rem;
+            border-radius: 8px;
+            border: 2px solid #5e8a6f;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #2a2a2a;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+        }
+
+        .arc-arrow {
+            color: #5e8a6f;
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .comparison-table {
+            width: 100%;
+            margin: 2rem 0;
+            border-collapse: separate;
+            border-spacing: 0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .comparison-table th {
+            background: linear-gradient(135deg, #5e8a6f 0%, #4a6d5a 100%);
+            color: white;
+            padding: 1.25rem;
+            text-align: left;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .comparison-table td {
+            padding: 1.25rem;
+            background: white;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .comparison-table tr:nth-child(even) td {
+            background: #f9f9f7;
+        }
+
+        .series-intro {
+            background: linear-gradient(135deg, #e8f5e9 0%, #f1f8f2 100%);
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 12px;
+            font-size: 1.05rem;
+            line-height: 1.85;
+            border-left: 5px solid #5e8a6f;
+        }
+
+        .quote-block {
+            margin: 2.5rem 0;
+            padding: 2rem 2.5rem;
+            background: linear-gradient(135deg, #f5f5f5 0%, #fafafa 100%);
+            border-left: 5px solid #2a2a2a;
+            font-style: italic;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .quote-text {
+            font-size: 1.3rem;
+            line-height: 1.75;
+            margin-bottom: 1rem;
+            color: #2a2a2a;
+        }
+
+        .quote-attribution {
+            text-align: right;
+            font-size: 1.05rem;
+            color: #666;
+            font-weight: 500;
+        }
+
+        .pullquote {
+            font-size: 1.4rem;
+            font-style: italic;
+            color: #2a2a2a;
+            margin: 2.5rem 0;
+            padding: 1.5rem 2rem;
+            border-left: 4px solid #5e8a6f;
+            background: linear-gradient(135deg, #e8f5e9 0%, #f1f8f2 100%);
+            line-height: 1.7;
+            border-radius: 8px;
+        }
+
+        .visual-divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent 0%, #5e8a6f 50%, transparent 100%);
+            margin: 3rem 0;
+        }
+
+        .key-point {
+            background: linear-gradient(135deg, #fff3e0 0%, #fef8f0 100%);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            border-left: 4px solid #f57f17;
+        }
+
+        .key-point::before {
+            content: "✦ ";
+            color: #f57f17;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        .toc {
+            margin: 3rem 0;
+            padding: 2.5rem;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            border-radius: 12px;
+        }
+
+        .toc-title {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            font-weight: 400;
+            color: #2a2a2a;
+        }
+
+        .toc-section {
+            margin-bottom: 2.5rem;
+        }
+
+        .toc-section-title {
+            font-weight: 600;
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: #2a2a2a;
+            padding: 0.75rem 1rem;
+            background: linear-gradient(135deg, #e8f5e9 0%, #f1f8f2 100%);
+            border-radius: 6px;
+        }
+
+        .toc-list {
+            list-style: none;
+            padding-left: 2rem;
+        }
+
+        .toc-list li {
+            padding: 0.5rem 0;
+            color: #4a4a4a;
+            line-height: 1.6;
+        }
+
+        .toc-list li::before {
+            content: "→ ";
+            color: #5e8a6f;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        .toc-list a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .toc-list a:hover {
+            color: #5e8a6f;
+        }
+
+        .circumstance-guide {
+            margin: 2.5rem 0;
+            padding: 2rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            border-top: 4px solid #5e8a6f;
+        }
+
+        .circumstance-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+            padding: 1rem;
+            background: linear-gradient(135deg, #e8f5e9 0%, #f1f8f2 100%);
+            border-radius: 6px;
+        }
+
+        .circumstance-description {
+            margin-bottom: 1.5rem;
+            color: #3a3a3a;
+            font-size: 1.05rem;
+            line-height: 1.8;
+            font-style: italic;
+            padding: 1rem;
+            background: #f9f9f7;
+            border-radius: 6px;
+        }
+
+        .circumstance-guidance {
+            font-size: 1.05rem;
+            line-height: 1.85;
+            margin-bottom: 1.5rem;
+        }
+
+        .circumstance-nodes {
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            color: #666;
+            padding: 1.5rem;
+            background: #f9f9f7;
+            border-radius: 6px;
+            margin-top: 1rem;
+        }
+
+        .print-button {
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+            padding: 1rem 2rem;
+            background: #5e8a6f;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        .print-button:hover {
+            background: #4a6d5a;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 2rem 1.5rem;
+            }
+            
+            h1.book-title {
+                font-size: 2.5rem;
+            }
+            
+            .title-page {
+                padding: 6rem 0 4rem 0;
+            }
+
+            .arc-flow {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="print-button no-print" onclick="window.print()">Save as PDF</button>
+
+    <div class="title-page">
+        <h1 class="book-title">Way of the Bodhisattva</h1>
+        <div class="subtitle">A Complete Second Brain System</div>
+        <div class="subtitle">Compressed Wisdom for Daily Practice</div>
+        <div class="byline">110 Teaching Nodes • 6 Practice Methods • 7 Teaching Arcs<br>350+ Connections • Circumstance-Based Guidance</div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div style="text-align: center; padding: 8rem 2rem; margin-bottom: 4rem;">
+        <h2 style="background: none; color: #2a2a2a; font-size: 1.5rem; font-weight: 400; margin-bottom: 3rem; padding: 0; box-shadow: none; border-radius: 0;">Dedication</h2>
+        
+        <div style="max-width: 600px; margin: 0 auto; font-size: 1.15rem; line-height: 1.9; color: #2a2a2a;">
+            <p style="margin-bottom: 2rem;">May this work serve the liberation of all beings.</p>
+            
+            <p style="margin-bottom: 2rem;">May whatever merit arises from this effort go to Rosemary, whose presence in my life remains a deep and pervasive inspiration that helps me keep going when I want to stop and who interrupts my unhelpful states with invitations to access her unbounded heart.</p>
+            
+            <p style="font-style: italic; color: #666; margin-top: 3rem;">October 17, 2025</p>
+        </div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="toc">
+        <h2 class="toc-title">Contents</h2>
+        
+        <div class="toc-section">
+            <div class="toc-section-title">About This Course</div>
+            <ul class="toc-list">
+                <li><a href="#course-context">Source Material and Context</a></li>
+                <li><a href="#gratitude">Gratitude</a></li>
+                <li><a href="#responsibility">Responsibility for Errors</a></li>
+            </ul>
+        </div>
+
+        <div class="toc-section">
+            <div class="toc-section-title">Part I: Foundations</div>
+            <ul class="toc-list">
+                <li><a href="#about">What Is the Empty Brain Method</a></li>
+                <li><a href="#structure">How This System Works</a></li>
+                <li><a href="#usage">Practical Application Guide</a></li>
+            </ul>
+        </div>
+
+        <div class="toc-section">
+            <div class="toc-section-title">Part II: Teaching Nodes</div>
+            <ul class="toc-list">
+                <li><a href="#myr-wel">MYR-WEL: Mingyur Rinpoche Welcome (10 nodes)</a></li>
+                <li><a href="#ch1">CH1: Excellence of Bodhicitta (12 nodes)</a></li>
+                <li><a href="#ch3">CH3: Taking Bodhicitta (12 nodes)</a></li>
+                <li><a href="#ch8">CH8: Meditation as Bodhisattva (11 nodes)</a></li>
+                <li><a href="#ch9">CH9: Wisdom/Prajñā (10 nodes)</a></li>
+                <li><a href="#l6">L6: Wisdom Applied to Daily Life (12 nodes)</a></li>
+            </ul>
+        </div>
+
+        <div class="toc-section">
+            <div class="toc-section-title">Part III: Practice Methods</div>
+            <ul class="toc-list">
+                <li><a href="#practices">Six Complete Guided Meditations</a></li>
+                <li><a href="#daily">Daily Practice Structure</a></li>
+            </ul>
+        </div>
+
+        <div class="toc-section">
+            <div class="toc-section-title">Part IV: Teaching Arcs</div>
+            <ul class="toc-list">
+                <li><a href="#arcs">Seven Developmental Progressions</a></li>
+            </ul>
+        </div>
+
+        <div class="toc-section">
+            <div class="toc-section-title">Part V: Circumstance-Based Guides</div>
+            <ul class="toc-list">
+                <li><a href="#circumstances">What to Practice When</a></li>
+            </ul>
+        </div>
+
+        <div class="toc-section">
+            <div class="toc-section-title">Part VI: Teaching Gems</div>
+            <ul class="toc-list">
+                <li><a href="#gems">Essential Quotes for Contemplation</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <h2>About This Course</h2>
+
+    <div class="intro-section">
+        <h3 style="margin-top: 0; border: none; padding: 0;">Source Material and Context</h3>
+
+        <p>This reference document draws from the Way of the Bodhisattva course offered through Tergar Learning Community, an online educational platform founded by Mingyur Rinpoche that makes authentic Buddhist teachings accessible to practitioners worldwide. The course explores Shantideva's Bodhicaryavatara, an eighth-century text that remains one of the most beloved and profound works in the Tibetan Buddhist tradition, examining how to cultivate bodhicitta and integrate the awakened heart into every dimension of daily life.</p>
+
+        <p>The teachings presented here come from multiple instructors who bring different perspectives and skillful means to this material, including Mingyur Rinpoche, whose clarity and warmth make complex teachings immediately accessible, Tim Olmsted, whose deep knowledge of the tradition combines with practical insight into contemporary practice, and references to other teachers in the lineage including Pema Chödrön, Trungpa Rinpoche, and the historical masters whose wisdom continues to guide practitioners today.</p>
+
+        <h4>Gratitude</h4>
+
+        <p>Deep gratitude goes to Mingyur Rinpoche for his boundless generosity in offering these teachings and for creating Tergar as a container where authentic dharma remains accessible regardless of geography or circumstance. Gratitude to Tim Olmsted and all the teachers who dedicate their lives to transmitting this wisdom with precision and care. Gratitude to Shantideva, whose verse continues to illuminate the path centuries after its composition. Gratitude to the entire lineage of teachers who preserved and transmitted these instructions through generations of practice.</p>
+
+        <h4>Responsibility for Errors</h4>
+
+        <p>Any mistakes, misunderstandings, or distortions in this compilation belong entirely to the author and reflect errors in transcription, interpretation, or compression rather than flaws in the original teachings. The teachers cited here speak with authority earned through decades of practice and study within an authentic lineage. Where this document fails to capture the full depth or nuance of their instruction, that failure stems from the limitations of the compilation process rather than from the source material itself. Please direct any criticism or correction to the author rather than to the teachers whose wisdom deserves better representation than these notes may provide.</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <h2 id="about">Part I: Foundations</h2>
+
+    <div class="concept-box">
+        <h3 style="margin-top: 0; border: none; padding: 0;">What Is the Empty Brain Method</h3>
+
+        <p>The Empty Brain Method operates on a principle that runs counter to most knowledge management systems, which aim to capture everything a source contains through comprehensive notes that preserve structure, language, and detail. This system instead extracts only the conceptual essence of each teaching, compressing what might span pages of explanation into one to three sentences that contain the irreducible core of the insight.</p>
+
+        <p>This compression serves not to diminish the teaching but to make it immediately accessible when that specific wisdom becomes relevant to your life, since the goal here is not intellectual mastery of the material but practical application that transforms how you move through each day. When anger arises at work, when overwhelm threatens to shut you down, when helping others begins to drain rather than fulfill, you need the relevant teaching compressed to its essence and delivered in seconds rather than requiring you to page through notebooks or scroll through lengthy summaries hoping to find what might address your current circumstance.</p>
+
+        <p>The method takes its name from the recognition that genuine understanding comes not from holding massive amounts of information in working memory but from externalizing that cognitive load into a system that lets you retrieve precisely what you need when you need it, leaving your actual mind free to engage directly with experience rather than constantly trying to remember what you learned about engaging with experience. The system becomes a prosthetic extension of your practice, holding the map while you walk the territory.</p>
+    </div>
+
+    <div class="concept-box">
+        <h3 id="structure" style="margin-top: 0; border: none; padding: 0;">How This System Works</h3>
+
+        <p>The architecture here consists of 110 conceptual nodes organized into nine teaching series, each node representing one core insight compressed to its essential form while maintaining connections to related teachings throughout the network. These connections matter because wisdom does not exist in isolation but in relationship, with each teaching illuminating and being illuminated by others in ways that create understanding deeper than any single node could provide on its own.</p>
+
+        <div class="key-point">
+            Each node follows a consistent structure that begins with a unique identifier allowing precise reference and navigation, continues with a concept name that captures the teaching's essence in a few words, presents the core teaching itself in one to three sentences, and concludes with explicit connections to other nodes where the teaching extends, deepens, or finds practical application.
+        </div>
+
+        <p>Beyond the nodes themselves, the system includes six complete practice methods that translate conceptual understanding into concrete meditation instructions you can follow immediately, seven teaching arcs that show developmental progressions through the material revealing how insights build on each other over time, and circumstance-based guides that let you quickly find relevant teachings when facing specific situations in daily life. The combination creates something between a reference work and a practice manual, equally useful for study and for immediate application when life demands wisdom rather than theory.</p>
+    </div>
+
+    <table class="comparison-table">
+        <thead>
+            <tr>
+                <th>Traditional Notes</th>
+                <th>Empty Brain Method</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Comprehensive summaries preserving structure</td>
+                <td>Conceptual essence compressed to 1-3 sentences</td>
+            </tr>
+            <tr>
+                <td>Linear organization by source</td>
+                <td>Network of connections showing relationships</td>
+            </tr>
+            <tr>
+                <td>Requires searching through lengthy documents</td>
+                <td>Immediate retrieval under 30 seconds</td>
+            </tr>
+            <tr>
+                <td>Organized for completeness</td>
+                <td>Organized for practical application</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="definition-box">
+        <h3 id="usage" style="margin-top: 0; border: none; padding: 0;">Practical Application Guide</h3>
+
+        <p>Use this system in whatever way serves your practice, since the structure supports multiple approaches depending on whether you need immediate guidance for a current situation, systematic study of how teachings develop, or contemplative exploration of specific insights. For immediate needs, the circumstance-based guides in Part V let you locate relevant teachings within seconds when overwhelm strikes, anger arises, or helping others threatens to drain you completely.</p>
+
+        <p>For systematic study, the teaching arcs in Part IV reveal developmental progressions that show how bodhicitta unfolds from initial glimpses through formal aspiration to the union of wisdom and compassion, how the sense of separate self gradually loosens through practice, and how wisdom moves from concept to direct seeing to lived experience that transforms ordinary moments. Following an arc from beginning to end traces a complete path of development in that specific dimension of practice.</p>
+
+        <p>For daily practice, the six methods in Part III provide complete meditation instructions that you can use immediately, selecting whichever fits your current energy level, available time, and what your practice most needs today. Morning practice might emphasize motivation and aspiration, midday practice might work directly with whatever difficulty has arisen, and evening practice might focus on integration and dedication of whatever understanding developed through the day.</p>
+
+        <div class="key-point">
+            The system gains value through use rather than completeness, becoming more useful the more you engage with it since each time you follow a connection between nodes or apply a teaching to an actual circumstance, you strengthen the neural pathways that let wisdom arise naturally when needed rather than requiring conscious retrieval from memory.
+        </div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <h2 id="myr-wel">Part II: Teaching Nodes</h2>
+
+    <h3>MYR-WEL: Mingyur Rinpoche Welcome</h3>
+
+    <div class="series-intro">
+        <p>Mingyur Rinpoche opens the course by establishing foundations that will support everything that follows, beginning with a clear definition of bodhicitta that locates the awakened heart not in some distant spiritual attainment but in the natural expansion of loving-kindness and compassion when these qualities become unlimited rather than bounded by self-concern. His emphasis on testing the teachings rather than accepting them on authority creates space for genuine understanding that emerges through practice rather than blind faith, while his teachings on appreciation and basic goodness establish the ground from which authentic practice grows.</p>
+
+        <p>These foundational teachings reveal a teacher who trusts students to find their own way while providing clear markers for the path, someone whose authority comes not from demanding acceptance but from inviting investigation. The balance he strikes between openness and commitment, between holding teachings lightly enough to examine them critically yet seriously enough to practice them fully, prevents the twin traps of spiritual materialism that collects teachings without practicing them and fundamentalism that practices without understanding.</p>
+    </div>
+
+    <div class="node-entry" id="MYR-WEL-001">
+        <div class="node-header">
+            <div class="node-id">MYR-WEL-001</div>
+            <div class="node-name">Bodhicitta Definition</div>
+        </div>
+
+        <div class="node-teaching">
+            When loving-kindness and compassion become unlimited, vast, and really deep, that is what we call bodhicitta.
+        </div>
+
+        <div class="node-commentary">
+            <p>This definition cuts through the mystification that often surrounds bodhicitta by locating it not in some rarified spiritual state but in qualities you already know through direct experience, since everyone has felt loving-kindness toward someone and compassion for another's suffering even if those feelings remained bounded by self-concern or limited to a small circle of people close to you. The teaching points toward what happens when those familiar qualities expand beyond their usual boundaries until they become unlimited in scope and really deep in their capacity to motivate action rather than remaining superficial wishes that evaporate when tested by difficulty.</p>
+
+            <div class="key-point">
+                The progression from limited to unlimited matters because it reveals bodhicitta as something that develops rather than appearing fully formed through a sudden conversion experience, which means the small moments of genuine care you already experience contain the seed of the awakened heart that the path will cultivate.
+            </div>
+
+            <p>When you feel concern for a stranger's distress or genuine delight in another's success despite gaining nothing yourself, you touch the quality that practice will deepen and extend until it becomes your default mode of being rather than an occasional experience that surprises you with its appearance.</p>
+        </div>
+
+        <div class="node-connections">
+            <div class="connections-label">Connected Teachings</div>
+            <a href="#CH1-001" class="connection-link">CH1-001</a>
+            <a href="#CH3-001" class="connection-link">CH3-001</a>
+            <a href="#CH8-006" class="connection-link">CH8-006</a>
+        </div>
+
+        <div class="node-meta">
+            Teacher: Mingyur Rinpoche | Arc: Bodhicitta Development
+        </div>
+    </div>
+
+    <div class="visual-divider"></div>
+
+    <div class="node-entry" id="MYR-WEL-002">
+        <div class="node-header">
+            <div class="node-id">MYR-WEL-002</div>
+            <div class="node-name">Test My Words Like Gold</div>
+        </div>
+
+        <div class="node-teaching">
+            Test everything. Test my words like testing gold through examination. Do not accept anything just because it comes from a teacher or tradition.
+        </div>
+
+        <div class="node-commentary">
+            <p>This instruction establishes the relationship between teacher and student as one of investigation rather than blind acceptance, which protects both the teaching and the student from the distortions that arise when authority replaces understanding. The metaphor of testing gold through examination points toward the traditional methods of checking gold's purity through rubbing, heating, and cutting, methods that reveal what the metal actually consists of rather than taking its appearance as sufficient evidence of value.</p>
+
+            <p>Applied to spiritual teachings, this testing happens through practice that reveals whether what sounds profound in theory actually transforms experience when you apply it to the difficulties and confusions that make up your actual life. A teaching that produces genuine shifts in how you relate to anger, fear, or self-concern proves its value through results rather than requiring you to accept its truth on the teacher's authority or the tradition's longevity, while teachings that sound impressive but leave experience unchanged fail the test regardless of their philosophical sophistication or their presenter's credentials.</p>
+        </div>
+
+        <div class="node-connections">
+            <div class="connections-label">Connected Teachings</div>
+            <a href="#TIM-WEL-003" class="connection-link">TIM-WEL-003</a>
+            <a href="#CH9-005" class="connection-link">CH9-005</a>
+        </div>
+
+        <div class="node-meta">
+            Teacher: Mingyur Rinpoche | Arc: Practice Integration
+        </div>
+    </div>
+
+    <div class="visual-divider"></div>
+
+    <div class="node-entry" id="MYR-WEL-009">
+        <div class="node-header">
+            <div class="node-id">MYR-WEL-009</div>
+            <div class="node-name">Appreciation Meditation</div>
+        </div>
+
+        <div class="node-teaching">
+            Appreciation of what you already have. This becomes the foundation for everything else.
+        </div>
+
+        <div class="node-commentary">
+            <p>Starting practice with appreciation rather than striving toward some future attainment reverses the usual approach that begins with recognizing what you lack and then working to acquire it, an approach that reinforces the fundamental dissatisfaction driving the whole cycle of suffering. Appreciation begins instead with noticing what already exists in your life that makes existence workable and sometimes even delightful, from the basic capacity of your body to move and your mind to understand through to the specific people, places, and circumstances that support your life.</p>
+
+            <div class="key-point">
+                This foundation matters because practice built on appreciation develops from sufficiency rather than lack, from recognition of what works rather than obsession with what doesn't, which creates the stable ground from which genuine transformation becomes possible.
+            </div>
+
+            <p>When practice stems from appreciation, the motivation remains sustainable through difficulty rather than collapsing when progress feels slow or circumstances turn challenging, since you practice not to escape an unbearable present but to deepen your capacity to meet life as it actually appears.</p>
+        </div>
+
+        <div class="node-connections">
+            <div class="connections-label">Connected Teachings</div>
+            <a href="#MYR-WEL-006" class="connection-link">MYR-WEL-006</a>
+            <a href="#MYR-WEL-010" class="connection-link">MYR-WEL-010</a>
+            <a href="#PRAC-L4" class="connection-link">PRAC-L4</a>
+        </div>
+
+        <div class="node-meta">
+            Teacher: Mingyur Rinpoche | Arc: Practice Integration | Circumstances: Anxious, Overwhelmed
+        </div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <h3 id="ch1">CH1: Excellence of Bodhicitta</h3>
+
+    <div class="series-intro">
+        <p>Shantideva begins the Bodhicaryavatara by establishing why anyone would undertake the bodhisattva path, not through abstract philosophy but through examining the actual predicament that defines human existence when lived without the awakened heart. His analysis cuts deep into the mechanisms that keep beings trapped in repetitive patterns despite their genuine wish to be free from suffering, revealing how we pursue the very things that perpetuate our misery while avoiding the practices that might liberate us from that cycle.</p>
+
+        <p>The teaching on lightning glimpses becomes crucial here because it points toward moments you have already experienced when compassion arose naturally without effort, showing that bodhicitta is not some foreign quality you must acquire but a capacity that occasionally breaks through the habitual self-concern that usually dominates your motivation. These glimpses prove that transformation is possible not because some authority says so but because you have tasted it directly in moments when your heart opened beyond its usual boundaries.</p>
+    </div>
+
+    <div class="node-entry" id="CH1-001">
+        <div class="node-header">
+            <div class="node-id">CH1-001</div>
+            <div class="node-name">Lightning Glimpses</div>
+        </div>
+
+        <div class="node-teaching">
+            Brief moments when compassion arises naturally, without effort. These glimpses show what is possible and point the way forward.
+        </div>
+
+        <div class="node-commentary">
+            <p>Everyone has experienced these moments when your concern for another's wellbeing arose spontaneously without calculation or self-interest, when you acted from genuine care rather than obligation or expectation of reward, when your heart opened beyond its usual boundaries and you felt another's joy or suffering as directly as your own. These glimpses might last only seconds before familiar patterns of self-concern reassert themselves, but their brief appearance proves that the capacity for unlimited compassion exists within you already rather than requiring acquisition of some foreign quality through years of arduous practice.</p>
+
+            <p>The teaching names these glimpses as lightning because they illuminate the landscape suddenly and completely before darkness returns, showing you in that brief flash what the territory actually contains and where the path might lead if you develop the capacity to sustain that illumination. Practice aims not to manufacture these moments, which arise naturally when conditions align, but to extend their duration and frequency until what now appears occasionally as a glimpse becomes your stable mode of being from which you meet each situation as it arises.</p>
+        </div>
+
+        <div class="node-connections">
+            <div class="connections-label">Connected Teachings</div>
+            <a href="#MYR-WEL-001" class="connection-link">MYR-WEL-001</a>
+            <a href="#CH1-008" class="connection-link">CH1-008</a>
+            <a href="#CH3-001" class="connection-link">CH3-001</a>
+        </div>
+
+        <div class="node-meta">
+            Teacher: Shantideva | Arc: Bodhicitta Development
+        </div>
+    </div>
+
+    <div class="visual-divider"></div>
+
+    <div class="node-entry" id="CH1-003">
+        <div class="node-header">
+            <div class="node-id">CH1-003</div>
+            <div class="node-name">Thinking Bigger</div>
+        </div>
+
+        <div class="node-teaching">
+            The essence of the mahayana is thinking bigger. Not just your own liberation, but the liberation of all beings.
+        </div>
+
+        <div class="node-commentary">
+            <p>Trungpa Rinpoche's formulation cuts through elaborate philosophical explanations of what distinguishes the mahayana path by locating its essence in the simple expansion of your circle of concern from personal liberation to universal liberation, from solving your own suffering to addressing the suffering that afflicts all beings caught in the same predicament you face. This expansion matters not as a moral obligation imposed from outside but as the natural development of understanding that recognizes how your liberation cannot be separated from others' liberation when the self you are trying to liberate turns out to be empty of independent existence.</p>
+
+            <p>Thinking bigger in this context means recognizing that your anger, fear, and confusion do not afflict you uniquely but represent patterns that trap everyone, which makes addressing these patterns in yourself inseparable from addressing them wherever they appear. The bodhisattva vow to liberate all beings before entering final nirvana sounds absurd when taken literally as a temporal sequence but makes perfect sense when understood as committing to address the root causes of suffering rather than merely escaping their personal consequences while leaving the underlying patterns intact.</p>
+        </div>
+
+        <div class="node-connections">
+            <div class="connections-label">Connected Teachings</div>
+            <a href="#CH1-001" class="connection-link">CH1-001</a>
+            <a href="#CH3-003" class="connection-link">CH3-003</a>
+            <a href="#CH8-002" class="connection-link">CH8-002</a>
+        </div>
+
+        <div class="node-meta">
+            Teacher: Trungpa Rinpoche | Arc: Bodhicitta Development | Circumstances: Stuck in Patterns
+        </div>
+    </div>
+
+    <div class="visual-divider"></div>
+
+    <div class="node-entry" id="CH1-004">
+        <div class="node-header">
+            <div class="node-id">CH1-004</div>
+            <div class="node-name">Dungeons of Samsara</div>
+        </div>
+
+        <div class="node-teaching">
+            Doing the same thing over and over thinking we will get different results. The definition of our predicament.
+        </div>
+
+        <div class="node-commentary">
+            <p>Einstein's definition of insanity applies with uncomfortable precision to the human condition when examined honestly, since we continue pursuing the same strategies that have never produced lasting satisfaction while expecting different results this time if only we can acquire more, achieve higher status, find the right relationship, or gain sufficient control over circumstances. The pattern repeats not because we lack intelligence but because the fundamental delusion driving it operates below the level of conscious choice, manifesting as the unexamined assumption that happiness comes from getting what we want rather than from transforming our relationship to wanting itself.</p>
+
+            <p>Samsara names this repetitive pattern rather than referring to some cosmic realm of existence, describing the psychological prison we construct through habitually pursuing what cannot satisfy and avoiding what might liberate us from that futile pursuit. The dungeon metaphor captures both the confinement this creates and our role in maintaining it, since unlike a physical prison imposed from outside, this confinement exists only through our continued commitment to the same patterns that have already proven incapable of delivering what they promise.</p>
+        </div>
+
+        <div class="node-connections">
+            <div class="connections-label">Connected Teachings</div>
+            <a href="#CH1-006" class="connection-link">CH1-006</a>
+            <a href="#CH1-009" class="connection-link">CH1-009</a>
+            <a href="#CH3-007" class="connection-link">CH3-007</a>
+        </div>
+
+        <div class="node-meta">
+            Teacher: Einstein/Shantideva | Arc: Liberation from Patterns | Circumstances: Stuck
+        </div>
+    </div>
+
+    <div class="pullquote">
+        Beings long to free themselves from misery, but misery itself they follow and pursue.
+    </div>
+
+    <div class="page-break"></div>
+
+    <h3 id="ch3">CH3: Taking Bodhicitta</h3>
+
+    <div class="series-intro">
+        <p>Having established the excellence of bodhicitta and the predicament it addresses, Shantideva turns to the actual practice of developing the awakened heart through distinguishing aspiration from application, wish from action, motivation from the skillful means that translate that motivation into concrete transformation. This distinction matters because confusion between the two leads either to grandiose aspirations that never touch actual behavior or to mechanical practice divorced from the motivation that gives it meaning and direction.</p>
+
+        <p>The teachings here work directly with the self-concern that most spiritual systems try to bypass or suppress, recognizing that transformation happens not through rejecting selfishness but through expanding it until the boundary between self and other becomes porous enough that caring for others' welfare feels as natural and immediate as caring for your own. This approach respects the psychological reality that genuine motivation must connect to felt needs rather than trying to operate purely from abstract principle or imposed obligation.</p>
+    </div>
+
+    <div class="node-entry" id="CH3-001">
+        <div class="node-header">
+            <div class="node-id">CH3-001</div>
+            <div class="node-name">Two Types of Bodhicitta</div>
+        </div>
+
+        <div class="node-teaching">
+            Aspiration bodhicitta: the wish to benefit all beings. Application bodhicitta: actually doing it through practice and action.
+        </div>
+
+        <div class="node-commentary">
+            <p>The distinction between aspiration and application prevents the common mistake of confusing genuine insight about what would benefit beings with actual capacity to provide that benefit, since recognizing that universal liberation represents the ultimate good does not automatically grant you the wisdom and skillful means required to help anyone achieve it. Aspiration bodhicitta establishes direction and motivation, the north star that orients your practice and prevents you from settling for lesser goals, while application bodhicitta develops the actual capacities that let you move in that direction through training in ethics, meditation, and wisdom.</p>
+
+            <div class="key-point">
+                Both types matter because aspiration without application remains pure fantasy that makes you feel virtuous without changing anything, while application without aspiration becomes mechanical technique divorced from the larger purpose that gives it meaning.
+            </div>
+
+            <p>The path requires both the vast vision that sees beyond immediate self-concern to recognize all beings' fundamental equality in wanting happiness and avoiding suffering, and the patient cultivation of specific practices that gradually transform that vision from abstract understanding to lived reality that shapes how you meet each situation.</p>
+        </div>
+
+        <div class="node-connections">
+            <div class="connections-label">Connected Teachings</div>
+            <a href="#MYR-WEL-001" class="connection-link">MYR-WEL-001</a>
+            <a href="#CH1-001" class="connection-link">CH1-001</a>
+            <a href="#CH3-009" class="connection-link">CH3-009</a>
+        </div>
+
+        <div class="node-meta">
+            Teacher: Shantideva | Arc: Bodhicitta Development
+        </div>
+    </div>
+
+    <table class="comparison-table" style="margin-top: 2rem;">
+        <thead>
+            <tr>
+                <th>Aspiration Bodhicitta</th>
+                <th>Application Bodhicitta</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>The wish to benefit all beings</td>
+                <td>Actually doing it through practice</td>
+            </tr>
+            <tr>
+                <td>Establishes direction and motivation</td>
+                <td>Develops actual capacities</td>
+            </tr>
+            <tr>
+                <td>The north star orienting practice</td>
+                <td>Training in ethics, meditation, wisdom</td>
+            </tr>
+            <tr>
+                <td>Vast vision beyond self-concern</td>
+                <td>Concrete transformation of behavior</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="visual-divider"></div>
+
+    <div class="node-entry" id="CH3-007">
+        <div class="node-header">
+            <div class="node-id">CH3-007</div>
+            <div class="node-name">Shenpa - The Hook</div>
+        </div>
+
+        <div class="node-teaching">
+            That moment when you get hooked. The urge to scratch an itch. The moment before we act on habit. Catching this is the work.
+        </div>
+
+        <div class="node-commentary">
+            <p>Pema Chödrön's teaching on shenpa identifies the crucial moment in the chain of reactivity where intervention remains possible, the gap between the arising of a disturbing emotion and your habitual response to it. This moment passes quickly because years of conditioning have made the transition from trigger to reaction nearly automatic, but mindfulness training gradually extends that gap until you can recognize the urge to react without immediately acting on it, can feel the hook without getting pulled by it.</p>
+
+            <p>The metaphor of being hooked captures both the external trigger and your role in the process, since a hook requires something that can be hooked to accomplish anything. When someone criticizes you or a situation frustrates your plans, the hook of that circumstance only catches if you have the corresponding vulnerability of taking it personally or insisting reality conform to your preferences. Practice works not by removing all hooks from the environment, which proves impossible, but by reducing the grabbiness that makes you catch on them.</p>
+
+            <div class="key-point">
+                The urge to scratch an itch provides another angle on the same dynamic, since when discomfort arises you face the choice between immediately trying to eliminate it through scratching, which provides brief relief before making the itch worse, or simply feeling the sensation without adding the layer of reactivity that intensifies it.
+            </div>
+
+            <p>This choice point exists in every moment of difficulty, from minor annoyances through major traumas, always presenting the option to either follow your habitual pattern of trying to escape discomfort or stay present with experience as it actually appears.</p>
+        </div>
+
+        <div class="node-connections">
+            <div class="connections-label">Connected Teachings</div>
+            <a href="#CH4-5-010" class="connection-link">CH4-5-010</a>
+            <a href="#CH8-007" class="connection-link">CH8-007</a>
+            <a href="#PRAC-L2" class="connection-link">PRAC-L2</a>
+        </div>
+
+        <div class="node-meta">
+            Teacher: Pema Chödrön | Arc: Liberation from Patterns | Circumstances: Angry, Reactive
+        </div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <h3 id="ch8">CH8: Meditation as Bodhisattva</h3>
+
+    <div class="series-intro">
+        <p>The meditation chapter reveals how formal practice supports the development of both types of bodhicitta by training the mind in the specific contemplations and techniques that gradually dissolve the boundary between self and other. These are not abstract philosophical exercises but practices that work directly with the felt sense of separation that maintains self-concern as your default mode, using that same capacity for empathy and imagination that usually serves self-interest to extend your circle of identification until it includes all beings.</p>
+
+        <p>Shantideva's presentation moves through increasingly radical steps in this dissolution, from equalizing self and other by recognizing that everyone wants happiness and freedom from suffering just as you do, through exchanging self and other by taking on others' suffering and giving them your happiness in contemplation, to finally putting others before yourself by genuinely caring more about their welfare than your own. Each step challenges the deep conditioning that treats your own experience as fundamentally more real and important than anyone else's.</p>
+    </div>
+
+    <div class="node-entry" id="CH8-002">
+        <div class="node-header">
+            <div class="node-id">CH8-002</div>
+            <div class="node-name">Self-Cherishing Problem</div>
+        </div>
+
+        <div class="node-teaching">
+            All the joy the world contains has come through wishing happiness for others. All the misery the world contains has come through wanting pleasure for oneself.
+        </div>
+
+        <div class="node-commentary">
+            <p>Shantideva's most radical teaching inverts the common sense assumption that your happiness depends on pursuing your own interests while others' claims on your concern represent obstacles or burdens that limit your freedom to do what you want. The teaching asserts instead that genuine joy arises only through the expansion of concern beyond self-interest to include others' welfare, while the single-minded pursuit of personal pleasure produces the very misery it aims to avoid by intensifying the sense of separate self whose demands can never be satisfied.</p>
+
+            <p>This claim can be tested through examining your own experience of those moments when you felt most fulfilled and alive, which likely involved contributing to something larger than your immediate self-interest rather than finally getting exactly what you wanted for yourself. The pleasure of acquisition fades quickly while leaving you unchanged, whereas the joy that comes through genuine connection and service tends to deepen over time and transform your sense of who you are and what matters.</p>
+
+            <div class="key-point">
+                The teaching points toward a psychological mechanism rather than making a moral demand, since self-cherishing produces misery not because it violates some cosmic rule but because it rests on the false assumption that you exist as an independent entity whose interests can be separated from others' interests.
+            </div>
+
+            <p>When you recognize that your wellbeing depends fundamentally on your relationships and connections rather than on accumulating advantages for an isolated self, caring for others' welfare becomes as natural as caring for your own health.</p>
+        </div>
+
+        <div class="node-connections">
+            <div class="connections-label">Connected Teachings</div>
+            <a href="#CH8-003" class="connection-link">CH8-003</a>
+            <a href="#CH8-004" class="connection-link">CH8-004</a>
+            <a href="#CH3-005" class="connection-link">CH3-005</a>
+        </div>
+
+        <div class="node-meta">
+            Teacher: Shantideva (8:129) | Arc: Self-Dissolution
+        </div>
+    </div>
+
+    <div class="visual-divider"></div>
+
+    <div class="node-entry" id="CH8-003">
+        <div class="node-header">
+            <div class="node-id">CH8-003</div>
+            <div class="node-name">Equalizing Self and Other</div>
+        </div>
+
+        <div class="node-teaching">
+            See that others want happiness exactly as you do. Their happiness matters as much as yours. First step in dissolving ego boundaries.
+        </div>
+
+        <div class="node-commentary">
+            <p>This contemplation begins the process of dissolving the boundary between self and other not through some mystical experience but through recognizing a simple fact about sentient existence that you already know but usually ignore when it conflicts with self-interest. Everyone you encounter wants to be happy and wants to avoid suffering with exactly the same intensity and directness that you want these things for yourself, which means there exists no fundamental difference between your desires and theirs that would justify treating your welfare as more important than theirs.</p>
+
+            <p>The practice asks you to genuinely see this equality rather than merely accepting it as an abstract principle, which requires bringing specific people to mind and recognizing that their inner experience of wanting happiness feels to them exactly as your wanting feels to you, that their suffering hurts them just as your suffering hurts you. When you manage to really see this even briefly, the solidity of the boundary between self and other begins to soften since the experience that seemed to uniquely define you turns out to be universal.</p>
+
+            <p>This equalizing represents only the first step in the full practice of exchanging self and other, establishing the foundation that makes the more radical later steps possible by breaking down the unexamined assumption that your experience matters more simply because it happens to you. Once you recognize the fundamental equality between your desire for happiness and everyone else's identical desire, the question shifts from whether to care about others' welfare to why you would privilege your own welfare over theirs when no real difference exists that would justify that privilege.</p>
+        </div>
+
+        <div class="node-connections">
+            <div class="connections-label">Connected Teachings</div>
+            <a href="#CH8-002" class="connection-link">CH8-002</a>
+            <a href="#CH8-004" class="connection-link">CH8-004</a>
+            <a href="#CH8-011" class="connection-link">CH8-011</a>
+            <a href="#PRAC-L4" class="connection-link">PRAC-L4</a>
+        </div>
+
+        <div class="node-meta">
+            Teacher: Shantideva | Arc: Self-Dissolution | Circumstances: Helping, Conflict
+        </div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <h3 id="ch9">CH9: Wisdom/Prajñā</h3>
+
+    <div class="series-intro">
+        <p>The wisdom chapter brings the philosophical investigation that has been implicit throughout into explicit focus, examining the nature of the self whose cherishing creates all the misery the previous chapters have addressed. This investigation matters not as abstract philosophy disconnected from practice but as direct inquiry into experience that reveals what actually exists when you look for the solid, independent self that seems to be looking, that appears to exist as the subject of all your experience yet dissolves under examination like mist when you try to pin down its actual nature.</p>
+
+        <p>Shantideva's presentation combines logical analysis with direct pointing, using reasoning to undermine the conceptual fixation on a permanent self while also pointing toward the direct seeing that remains when that fixation releases. The goal is not to convince you intellectually that no self exists but to prompt investigation that lets you discover through direct experience what looking for the self actually reveals when you look carefully rather than assuming you already know what you will find.</p>
+    </div>
+
+    <div class="node-entry" id="CH9-002">
+        <div class="node-header">
+            <div class="node-id">CH9-002</div>
+            <div class="node-name">Emptiness of Self</div>
+        </div>
+
+        <div class="node-teaching">
+            If no self or "I" exists at all, what is there left for fears to terrify?
+        </div>
+
+        <div class="node-commentary">
+            <p>Shantideva's question cuts to the practical consequence of recognizing emptiness rather than getting lost in philosophical abstractions about what emptiness means or doesn't mean. The teaching points toward how fear depends fundamentally on belief in a self that could be harmed, threatened, or destroyed, since without that assumption of a vulnerable entity requiring protection, what exactly would there be to fear losing? Threats can only terrify when you believe something real exists that those threats might damage or eliminate.</p>
+
+            <p>This does not mean the body cannot be hurt or that psychological pain does not exist, since both clearly do and the teaching does not deny immediate experience. Rather it points toward how the intensity of fear amplifies dramatically when you add to the actual experience of pain or threat the conceptual overlay of a permanent self that experiences it, a self whose existence you must protect at all costs. When that overlay relaxes through recognizing its nature as conceptual construction rather than objective fact, pain remains pain but loses much of its power to terrify because you no longer believe it threatens your fundamental existence.</p>
+
+            <div class="key-point">
+                The investigation proceeds not through logical argument alone but through looking directly for this self that fears, asking where exactly it exists and what it consists of when you search for it carefully.
+            </div>
+
+            <p>Is it the body that changes constantly and will certainly die? Is it the mind that flickers from thought to thought with no stable core? Is it some combination of body and mind? When you look directly in this way rather than assuming you already know what you will find, the solid self you have always taken for granted becomes increasingly difficult to locate.</p>
+        </div>
+
+        <div class="node-connections">
+            <div class="connections-label">Connected Teachings</div>
+            <a href="#CH9-003" class="connection-link">CH9-003</a>
+            <a href="#CH9-009" class="connection-link">CH9-009</a>
+            <a href="#L6-001" class="connection-link">L6-001</a>
+            <a href="#PRAC-L5" class="connection-link">PRAC-L5</a>
+            <a href="#PRAC-L6" class="connection-link">PRAC-L6</a>
+        </div>
+
+        <div class="node-meta">
+            Teacher: Shantideva (V.56) | Arc: Self-Dissolution, View Progression | Circumstances: Anxious, Fearful
+        </div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <h3 id="l6">L6: Wisdom Applied to Daily Life</h3>
+
+    <div class="series-intro">
+        <p>Mingyur Rinpoche's teachings on bringing wisdom into daily life prevent the common mistake of treating emptiness as something that applies only in meditation while returning to belief in solid existence as soon as you open your eyes and engage with ordinary activities. His approach emphasizes that wisdom practice does not occur primarily on the cushion but in how you meet each moment of your actual life, from drinking coffee through navigating difficult conversations to experiencing strong emotions that threaten to overwhelm your capacity to stay present.</p>
+
+        <p>The teaching on inner holidays becomes especially important here because it points toward the possibility of practicing wisdom continuously throughout your day rather than reserving it for formal sessions, taking brief gaps where you simply let go and rest without trying to accomplish anything or get anywhere. These gaps need not be long or occur in special circumstances but can happen anywhere when you remember to stop adding conceptual elaboration to experience and simply be with what appears without resistance or grasping.</p>
+    </div>
+
+    <div class="node-entry" id="L6-001">
+        <div class="node-header">
+            <div class="node-id">L6-001</div>
+            <div class="node-name">Don't Block, Just Be</div>
+        </div>
+
+        <div class="node-teaching">
+            You do not need to go beyond that. Just be "as it is." When we see the nature of phenomena as it is, our mind automatically goes beyond.
+        </div>
+
+        <div class="node-commentary">
+            <p>This teaching addresses the common misconception that wisdom practice requires you to get somewhere other than where you are, to achieve some special state or experience that differs from ordinary awareness. Mingyur points instead toward the sufficiency of simply being with experience as it presents itself without adding the layers of conceptual elaboration, judgment, and manipulation that usually separate you from direct contact with what appears. The mind goes beyond not through effort to transcend but through relaxing the effort to control that keeps you trapped in conceptual overlay.</p>
+
+            <p>The instruction to not block reveals what most prevents this simple being, since your default mode operates through constant evaluation of experience as desirable or undesirable followed by attempts to prolong what you like and eliminate what you don't like. This blocking happens so automatically that you rarely notice how much energy goes into maintaining it, how exhausting it becomes to constantly police experience rather than letting it be as it is. When you relax that policing even briefly, the natural clarity of mind becomes obvious without requiring any special technique to access it.</p>
+
+            <div class="key-point">
+                Seeing the nature of phenomena as it is does not mean perceiving some hidden reality behind appearances but seeing appearances themselves without the conceptual filter that usually interprets them according to how they relate to your preferences and projects.
+            </div>
+
+            <p>Coffee tastes however it tastes without needing to be better or worse than yesterday's coffee, traffic moves however it moves without needing to match your schedule, thoughts arise and pass without needing to mean anything about who you are. This direct seeing remains always available because it represents your natural state rather than something you must construct through practice.</p>
+        </div>
+
+        <div class="node-connections">
+            <div class="connections-label">Connected Teachings</div>
+            <a href="#L6-003" class="connection-link">L6-003</a>
+            <a href="#L6-007" class="connection-link">L6-007</a>
+            <a href="#CH9-009" class="connection-link">CH9-009</a>
+            <a href="#PRAC-L2" class="connection-link">PRAC-L2</a>
+        </div>
+
+        <div class="node-meta">
+            Teacher: Mingyur Rinpoche | Arc: Wisdom Integration | Circumstances: Caught in Concepts
+        </div>
+    </div>
+
+    <div class="visual-divider"></div>
+
+    <div class="node-entry" id="L6-003">
+        <div class="node-header">
+            <div class="node-id">L6-003</div>
+            <div class="node-name">Inner Holiday</div>
+        </div>
+
+        <div class="node-teaching">
+            The moment of letting go, stopping, dropping. When we just be, there is a glimpse of real freedom. That is emptiness practice, that is wisdom.
+        </div>
+
+        <div class="node-commentary">
+            <p>The metaphor of taking an inner holiday throughout your day provides a more accessible way to understand continuous practice than instructions that suggest maintaining some special state of awareness at all times, which tends to create tension through the effort required to sustain it. A holiday in this context means simply pausing from your usual mode of striving and agenda-pursuing to rest without trying to accomplish anything, not as preparation for returning to work refreshed but as an end in itself that requires no justification beyond the immediate relief of dropping your burden even briefly.</p>
+
+            <p>These moments need not last long to have impact, since even a few seconds of genuine letting go interrupts the momentum of habitual patterns and creates space for awareness that doesn't depend on controlling experience. You might take an inner holiday while waiting for a meeting to start, while walking from your car to a building, while your computer loads a program, using these gaps that would otherwise fill with planning or distraction to simply stop and be present without adding anything to what appears.</p>
+
+            <div class="key-point">
+                The teaching identifies these moments of letting go as emptiness practice rather than reserving that term for formal meditation sessions, which reveals that wisdom develops not primarily through accumulating hours on the cushion but through your willingness to release grasping whenever you remember to do so.
+            </div>
+
+            <p>Each brief holiday weakens the grip of patterns that insist you must always be doing something, getting somewhere, making progress toward goals, accomplishing tasks, which creates the possibility of resting in awareness that does not depend on any of that activity.</p>
+        </div>
+
+        <div class="node-connections">
+            <div class="connections-label">Connected Teachings</div>
+            <a href="#L6-001" class="connection-link">L6-001</a>
+            <a href="#L6-008" class="connection-link">L6-008</a>
+            <a href="#MYR-WEL-009" class="connection-link">MYR-WEL-009</a>
+        </div>
+
+        <div class="node-meta">
+            Teacher: Mingyur Rinpoche | Arc: Wisdom Integration | Circumstances: Overwhelmed, Need Space
+        </div>
+    </div>
+
+    <div class="visual-divider"></div>
+
+    <div class="node-entry" id="L6-012">
+        <div class="node-header">
+            <div class="node-id">L6-012</div>
+            <div class="node-name">Bring Into Daily Life</div>
+        </div>
+
+        <div class="node-teaching">
+            Dream pizza has temperature, taste, good for dream stomach yet not real. Not existing yet there. There but doesn't exist. That's emptiness. Enjoy your dreamlike coffee.
+        </div>
+
+        <div class="node-commentary">
+            <p>Mingyur's teaching on dreamlike reality provides one of the most accessible ways to understand emptiness by pointing toward an experience everyone has had rather than requiring mastery of philosophical analysis or advanced meditative states. When you dream at night, the pizza you eat in that dream has all the qualities of pizza including temperature and taste, fills your dream stomach, and creates satisfaction within the dream's own logic, yet you wake to find that none of it existed outside the dream's context even though your experience of it felt completely real while the dream lasted.</p>
+
+            <p>This same dreamlike quality applies to waking experience when you recognize it, not because waking and sleeping are identical but because both involve appearances that feel real and solid within their own context while lacking the independent existence you usually attribute to them. Your morning coffee really does taste however it tastes and really does wake you up through its caffeine content, yet that coffee exists only in dependence on countless causes and conditions from the beans' growing conditions through your capacity to taste and your conceptual categories that identify the liquid as coffee rather than as colored water with chemicals dissolved in it.</p>
+
+            <div class="key-point">
+                The instruction to enjoy your dreamlike coffee rather than dismissing it as unreal prevents the nihilistic misinterpretation that would conclude nothing matters if everything is empty, since the teaching points toward how recognizing the dreamlike nature of experience actually enhances your capacity to enjoy it by removing the anxiety that comes from taking it too seriously or the grasping that comes from trying to make it permanent.
+            </div>
+
+            <p>You can delight in the coffee's taste precisely because you don't need it to be anything other than what it is or to last longer than it lasts.</p>
+        </div>
+
+        <div class="node-connections">
+            <div class="connections-label">Connected Teachings</div>
+            <a href="#L6-011" class="connection-link">L6-011</a>
+            <a href="#CH8-010" class="connection-link">CH8-010</a>
+            <a href="#MYR-WEL-010" class="connection-link">MYR-WEL-010</a>
+        </div>
+
+        <div class="node-meta">
+            Teacher: Mingyur Rinpoche | Arc: Wisdom Integration | Circumstances: Daily Practice
+        </div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <h2 id="practices">Part III: Practice Methods</h2>
+
+    <div class="concept-box">
+        <h3 style="margin-top: 0; border: none; padding: 0;">Six Complete Guided Meditations</h3>
+        <p>These practice methods translate the conceptual teachings into concrete instructions you can follow immediately, providing specific techniques for developing bodhicitta, working with whatever arises in experience, investigating the nature of self, and recognizing the basic goodness that exists prior to all conceptual elaboration. Each method addresses different aspects of the path while remaining grounded in direct experience rather than abstract philosophy.</p>
+    </div>
+
+    <div class="practice-box" id="PRAC-L1">
+        <h4 style="margin-top: 0;">PRAC-L1: Bodhicitta Motivation Practice</h4>
+        
+        <p style="font-style: italic; margin-bottom: 1.5rem;">Setting motivation at the beginning of each day establishes the framework within which everything that follows unfolds, determining whether your activities serve primarily self-interest or contribute to something larger than your immediate concerns. This practice cultivates aspiration bodhicitta through reflecting on suffering's universality and letting natural compassion arise in response to recognizing how others want happiness and freedom from suffering with the same intensity you want these things for yourself.</p>
+
+        <div class="definition-box" style="margin: 1.5rem 0;">
+            <strong>Practice Instructions:</strong>
+
+            <p>Begin by sitting comfortably and taking a few breaths to settle into the present moment without trying to achieve any special state. Bring to mind someone you care about and recognize that they want to be happy just as you do, that they want to avoid suffering just as you do. Let yourself feel how their wellbeing matters to you naturally without forcing or manufacturing any particular emotion.</p>
+
+            <p>Gradually expand this recognition to include others in your life, including those you feel neutral toward and even those who have caused you difficulty, seeing that they too want happiness and want to avoid suffering regardless of how their actions affect you. Notice how this recognition feels in your body and mind without judging whether you are doing it correctly or feeling what you think you should feel.</p>
+
+            <p>Finally extend this recognition to all beings throughout space, including those you will never meet and those whose existence you cannot imagine, recognizing that the wish for happiness and freedom from suffering spans all forms of consciousness. From this expanded awareness, formally set the intention to use this day and this life for the benefit of all beings rather than only for securing your own comfort and advantage.</p>
+        </div>
+
+        <p><strong>Practice Duration:</strong> 5-15 minutes<br>
+        <strong>When to Use:</strong> Every morning before engaging with the day's activities<br>
+        <strong>Connected Nodes:</strong> <a href="#MYR-WEL-001" class="connection-link">MYR-WEL-001</a> <a href="#CH3-001" class="connection-link">CH3-001</a></p>
+    </div>
+
+    <div class="practice-box" id="PRAC-L2">
+        <h4 style="margin-top: 0;">PRAC-L2: Welcoming Elements Practice</h4>
+        
+        <p style="font-style: italic; margin-bottom: 1.5rem;">This practice develops the capacity to meet experience without resistance by cultivating an attitude of complete hospitality toward whatever appears in awareness, treating thoughts, emotions, and sensations as guests who have a right to be present rather than as intruders who must be ejected. The practice addresses the habitual pattern of dividing experience into wanted and unwanted categories followed by attempts to prolong the wanted and eliminate the unwanted, which creates constant tension through the effort required to maintain that division.</p>
+
+        <div class="definition-box" style="margin: 1.5rem 0;">
+            <strong>Practice Instructions:</strong>
+
+            <p>Sit in a comfortable position and bring attention to the direct experience of breathing without trying to control or improve it. Simply notice how breathing feels in this moment without concern for whether it matches some ideal of how breathing should feel. When a thought arises, welcome it as a guest rather than treating it as an interruption or distraction from the real practice. Notice what the thought consists of without following its content or pushing it away.</p>
+
+            <p>When an emotion arises, welcome it with the same hospitality you would extend to a visitor at your door. Notice where the emotion manifests in your body, what thoughts accompany it, how its intensity fluctuates over time. You need not like the emotion or want it to continue, but you can recognize its right to be present without immediately trying to eliminate it or analyze what it means about you.</p>
+
+            <p>When a physical sensation arises, welcome it whether comfortable or uncomfortable. Notice its location, quality, and how it changes moment to moment without needing to fix it or make it different. Continue this practice of welcoming whatever appears without preference or resistance, recognizing that this hospitality does not mean passive resignation but active acceptance of what exists in this moment while remaining free to respond skillfully to circumstances.</p>
+        </div>
+
+        <p><strong>Practice Duration:</strong> 10-30 minutes<br>
+        <strong>When to Use:</strong> Daily sitting practice, especially when struggling with difficult emotions or thoughts<br>
+        <strong>Connected Nodes:</strong> <a href="#L6-001" class="connection-link">L6-001</a> <a href="#CH9-009" class="connection-link">CH9-009</a> <a href="#CH3-007" class="connection-link">CH3-007</a></p>
+    </div>
+
+    <div class="practice-box" id="PRAC-L5">
+        <h4 style="margin-top: 0;">PRAC-L5: Investigating Self (Analytical)</h4>
+        
+        <p style="font-style: italic; margin-bottom: 1.5rem;">This investigation uses analysis to undermine the unexamined assumption that a solid, independent self exists as the subject of your experience by looking directly for this self and noting what you actually find rather than what you assume must be there. The practice proceeds through questioning rather than assertion, inviting discovery rather than demanding belief in a philosophical position.</p>
+
+        <div class="definition-box" style="margin: 1.5rem 0;">
+            <strong>Practice Instructions:</strong>
+
+            <p>Sit quietly and bring to mind the strong sense you have of being an "I" who experiences everything that happens in your life. Notice how this sense of self feels real and solid, how it seems to exist as an unchanging entity that persists through all your changing experiences. Then begin investigating this sense directly by asking where exactly this "I" exists.</p>
+
+            <p>Is the self the body? Look at your body and notice how it changes constantly from moment to moment, how it consists of parts that can be removed without destroying your sense of being you, how it will certainly die while you assume the self somehow continues. If the self were simply identical to the body, which part of the body would it be? The brain? A particular organ? The whole configuration? Notice what you find when you look directly rather than assuming you already know.</p>
+
+            <p>Is the self the mind? Look at your thoughts and notice how they arise and pass without your choosing their content, how you can observe them which suggests something observes them that is not itself a thought. Is the self the observer? But when you look for this observer, what do you actually find other than more thoughts about an observer? Continue this investigation without trying to reach any conclusion, simply noticing what direct looking reveals when you don't fill in the gaps with assumptions.</p>
+        </div>
+
+        <p><strong>Practice Duration:</strong> 10-20 minutes<br>
+        <strong>When to Use:</strong> When caught in self-concern or anxiety, when the sense of solid self feels especially strong<br>
+        <strong>Connected Nodes:</strong> <a href="#CH9-002" class="connection-link">CH9-002</a> <a href="#CH9-010" class="connection-link">CH9-010</a></p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <h2 id="arcs">Part IV: Teaching Arcs</h2>
+
+    <div class="concept-box">
+        <h3 style="margin-top: 0; border: none; padding: 0;">Seven Developmental Progressions</h3>
+        <p>These arcs reveal how individual teachings build on each other to create complete paths of development in specific dimensions of practice, showing the progression from initial glimpses through formal training to stable realization that transforms your default mode of being. Following an arc from beginning to end traces one complete thread through the complex web of teachings that together constitute the bodhisattva path.</p>
+    </div>
+
+    <div class="arc-diagram">
+        <h3 style="margin-top: 0; border: none; padding: 0;">Bodhicitta Development Arc</h3>
+        <p style="font-style: italic; color: #666; margin-bottom: 1.5rem;">The progressive unfolding of the awakened heart from initial glimpses through aspiration to union with wisdom</p>
+        
+        <p>This arc traces how bodhicitta develops from the brief lightning glimpses when compassion arises naturally through to the stable realization where wisdom and compassion function inseparably in every situation you encounter. The progression begins with recognizing that you have already experienced moments when concern for another's wellbeing arose spontaneously without calculation, which proves that the capacity for unlimited compassion exists within you rather than requiring acquisition of some foreign quality through arduous practice.</p>
+
+        <p>From that recognition, the arc moves through formal cultivation that distinguishes aspiration from application, wish from the concrete practices that develop capacity to actualize that wish, since wanting to benefit all beings does not automatically grant you the wisdom and skillful means required to actually help anyone. The path requires both the vast vision that sees beyond self-concern to recognize all beings' fundamental equality and the patient development of specific capacities through training in ethics, meditation, and wisdom.</p>
+
+        <div class="key-point">
+            The arc culminates not in some final achievement but in recognizing how wisdom and compassion represent two aspects of the same realization rather than separate qualities that must be balanced, since genuine wisdom naturally manifests as compassion while authentic compassion depends on the wisdom that sees how things actually exist.
+        </div>
+
+        <div class="arc-flow">
+            <span class="arc-node-box">MYR-WEL-001</span>
+            <span class="arc-arrow">→</span>
+            <span class="arc-node-box">CH1-001</span>
+            <span class="arc-arrow">→</span>
+            <span class="arc-node-box">CH1-008</span>
+            <span class="arc-arrow">→</span>
+            <span class="arc-node-box">CH3-001</span>
+            <span class="arc-arrow">→</span>
+            <span class="arc-node-box">CH3-009</span>
+            <span class="arc-arrow">→</span>
+            <span class="arc-node-box">CH8-006</span>
+            <span class="arc-arrow">→</span>
+            <span class="arc-node-box">CH9-001</span>
+            <span class="arc-arrow">→</span>
+            <span class="arc-node-box">CH9-008</span>
+        </div>
+    </div>
+
+    <div class="arc-diagram">
+        <h3 style="margin-top: 0; border: none; padding: 0;">Self-Dissolution Arc</h3>
+        <p style="font-style: italic; color: #666; margin-bottom: 1.5rem;">Gradually dissolving the boundary between self and other through practice</p>
+        
+        <p>This arc shows how the sense of separate self gradually loosens through practices that first recognize self-concern as the root of suffering, then work directly with expanding the circle of identification until the boundary between self and other becomes so porous that caring for others' welfare feels as natural as caring for your own. The progression respects the psychological reality that transformation happens not through suppressing or rejecting selfishness but through expanding it until you recognize how your wellbeing depends fundamentally on your connections rather than on advantages you accumulate for an isolated self.</p>
+
+        <p>The practices here move from equalizing self and other by seeing that everyone wants happiness with the same intensity you want it, through exchanging self and other in contemplation by taking on others' suffering and giving them your happiness, to investigating the self whose cherishing creates all this difficulty in the first place. Each step challenges the deep conditioning that treats your experience as fundamentally more real and important than anyone else's while working with that conditioning skillfully rather than trying to bypass it through spiritual bypassing that denies how strongly self-concern operates in your actual motivation.</p>
+
+        <div class="arc-flow">
+            <span class="arc-node-box">CH3-005</span>
+            <span class="arc-arrow">→</span>
+            <span class="arc-node-box">CH3-008</span>
+            <span class="arc-arrow">→</span>
+            <span class="arc-node-box">CH8-002</span>
+            <span class="arc-arrow">→</span>
+            <span class="arc-node-box">CH8-003</span>
+            <span class="arc-arrow">→</span>
+            <span class="arc-node-box">CH8-004</span>
+            <span class="arc-arrow">→</span>
+            <span class="arc-node-box">CH8-005</span>
+            <span class="arc-arrow">→</span>
+            <span class="arc-node-box">CH9-002</span>
+            <span class="arc-arrow">→</span>
+            <span class="arc-node-box">CH8-011</span>
+        </div>
+    </div>
+
+    <div class="arc-diagram">
+        <h3 style="margin-top: 0; border: none; padding: 0;">Wisdom Integration Arc</h3>
+        <p style="font-style: italic; color: #666; margin-bottom: 1.5rem;">Bringing wisdom from concept through direct seeing to lived reality</p>
+        
+        <p>This arc traces how wisdom develops from intellectual understanding through direct insight to stable realization that pervades your daily life rather than remaining confined to formal meditation sessions. The progression emphasizes that wisdom practice happens primarily not on the cushion but in how you meet ordinary experience, from drinking coffee through navigating difficult conversations to experiencing strong emotions, since each moment provides an opportunity to either reinforce habitual patterns of grasping and aversion or to recognize the dreamlike nature of experience that allows genuine freedom.</p>
+
+        <div class="key-point">
+            The teaching on inner holidays becomes crucial here because it points toward continuous practice throughout your day rather than reserving wisdom for special sessions, taking brief gaps where you simply stop and rest without trying to accomplish anything or get anywhere.
+        </div>
+
+        <p>These gaps need not be long or occur under special circumstances but can happen anywhere when you remember to drop conceptual elaboration and simply be with what appears, which gradually weakens the grip of patterns that insist you must always be doing something, getting somewhere, making progress toward goals.</p>
+
+        <div class="arc-flow">
+            <span class="arc-node-box">CH9-001</span>
+            <span class="arc-arrow">→</span>
+            <span class="arc-node-box">CH9-005</span>
+            <span class="arc-arrow">→</span>
+            <span class="arc-node-box">CH9-007</span>
+            <span class="arc-arrow">→</span>
+            <span class="arc-node-box">L6-001</span>
+            <span class="arc-arrow">→</span>
+            <span class="arc-node-box">L6-002</span>
+            <span class="arc-arrow">→</span>
+            <span class="arc-node-box">L6-004</span>
+            <span class="arc-arrow">→</span>
+            <span class="arc-node-box">L6-012</span>
+        </div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <h2 id="circumstances">Part V: Circumstance-Based Guides</h2>
+
+    <div class="circumstance-guide">
+        <div class="circumstance-title">When Overwhelmed</div>
+        <div class="circumstance-description">
+            Overwhelm arises when demands exceed your perceived capacity to meet them, creating the sense that you cannot handle what life presents or that you must keep everything under control to prevent disaster.
+        </div>
+        
+        <div class="circumstance-guidance">
+            <p>Start with appreciation practice that shifts focus from what overwhelms you to what remains workable in your life, from the catastrophic narrative your mind constructs to the simple fact that you remain present and able to take one breath, then another. This shift does not deny genuine difficulty but prevents the amplification that comes from adding catastrophic thinking to whatever challenge actually exists.</p>
+
+            <p>Take inner holidays throughout your day by dropping your agenda briefly and simply resting without trying to accomplish anything, which interrupts the momentum of overwhelm and creates space for awareness that doesn't depend on controlling everything. Start manageable rather than trying to do everything at once, recognizing that small consistent steps build capacity more reliably than grand gestures that collapse under their own weight.</p>
+        </div>
+        
+        <div class="circumstance-nodes">
+            <strong>Teachings:</strong> <a href="#MYR-WEL-009" class="connection-link">MYR-WEL-009</a> <a href="#CH9-009" class="connection-link">CH9-009</a> <a href="#L6-003" class="connection-link">L6-003</a> <a href="#CH1-011" class="connection-link">CH1-011</a><br>
+            <strong>Practices:</strong> <a href="#PRAC-L4" class="connection-link">PRAC-L4</a> <a href="#PRAC-L2" class="connection-link">PRAC-L2</a>
+        </div>
+    </div>
+
+    <div class="circumstance-guide">
+        <div class="circumstance-title">When Angry</div>
+        <div class="circumstance-description">
+            Anger arises when reality refuses to conform to your preferences and you believe it should, creating the impulse to attack whatever or whoever you blame for this refusal.
+        </div>
+        
+        <div class="circumstance-guidance">
+            <p>Catch the hook before you get pulled by recognizing that moment between the trigger and your habitual reaction when intervention remains possible, that gap where you can feel the urge to react without immediately acting on it. This catching happens not through suppression but through mindfulness that notices the hook without grabbing it.</p>
+
+            <p>Practice seeing afflictions as mirages that appear solid but dissolve under examination, recognizing that the person who angered you wants happiness just as you do even when their actions create difficulty for you. This equalizing does not excuse harmful behavior but shifts your response from blind reactivity to skillful action that addresses the situation without adding layers of resentment that poison both you and your relationship.</p>
+        </div>
+        
+        <div class="circumstance-nodes">
+            <strong>Teachings:</strong> <a href="#CH3-007" class="connection-link">CH3-007</a> <a href="#CH4-5-010" class="connection-link">CH4-5-010</a> <a href="#CH8-004" class="connection-link">CH8-004</a> <a href="#CH1-010" class="connection-link">CH1-010</a><br>
+            <strong>Practices:</strong> <a href="#PRAC-L2" class="connection-link">PRAC-L2</a> <a href="#PRAC-L5" class="connection-link">PRAC-L5</a>
+        </div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <h2 id="gems">Part VI: Teaching Gems</h2>
+
+    <div class="concept-box">
+        <p style="margin-bottom: 2rem;">These essential quotes compress core teachings into memorable phrases that you can carry with you throughout your day, using them as points of contemplation that deepen your understanding through repeated reflection on their meaning and application to your actual circumstances.</p>
+    </div>
+
+    <div class="quote-block">
+        <div class="quote-text">When loving-kindness and compassion become unlimited, vast, and really deep, that is what we call bodhicitta.</div>
+        <div class="quote-attribution">— Mingyur Rinpoche</div>
+    </div>
+
+    <div class="quote-block">
+        <div class="quote-text">Test everything. Test my words like testing gold through examination.</div>
+        <div class="quote-attribution">— Mingyur Rinpoche</div>
+    </div>
+
+    <div class="quote-block">
+        <div class="quote-text">The essence of the mahayana is thinking bigger.</div>
+        <div class="quote-attribution">— Trungpa Rinpoche</div>
+    </div>
+
+    <div class="quote-block">
+        <div class="quote-text">Beings long to free themselves from misery, but misery itself they follow and pursue.</div>
+        <div class="quote-attribution">— Shantideva</div>
+    </div>
+
+    <div class="quote-block">
+        <div class="quote-text">All the joy the world contains has come through wishing happiness for others. All the misery the world contains has come through wanting pleasure for oneself.</div>
+        <div class="quote-attribution">— Shantideva 8:129</div>
+    </div>
+
+    <div class="quote-block">
+        <div class="quote-text">If no self or "I" exists at all, what is there left for fears to terrify?</div>
+        <div class="quote-attribution">— Shantideva V.56</div>
+    </div>
+
+    <div class="quote-block">
+        <div class="quote-text">Compassion is nothing but the glow and display of emptiness.</div>
+        <div class="quote-attribution">— Kangyur Rinpoche</div>
+    </div>
+
+    <div class="quote-block">
+        <div class="quote-text">You do not need to go beyond that. Just be "as it is." When we see the nature of phenomena as it is, our mind automatically goes beyond.</div>
+        <div class="quote-attribution">— Mingyur Rinpoche</div>
+    </div>
+
+    <div class="quote-block">
+        <div class="quote-text">The moment of letting go, stopping, dropping. When we just be, there is a glimpse of real freedom.</div>
+        <div class="quote-attribution">— Mingyur Rinpoche</div>
+    </div>
+
+    <div class="quote-block">
+        <div class="quote-text">Enjoy your dreamlike coffee.</div>
+        <div class="quote-attribution">— Mingyur Rinpoche</div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <h2>Colophon</h2>
+
+    <div class="intro-section">
+        <p>This reference was compiled using the Empty Brain Method, a knowledge management approach that prioritizes conceptual essence over comprehensive summary, compressing each teaching to its irreducible core while maintaining connections throughout the network that show how insights build on and illuminate each other. The system contains 110 teaching nodes organized into nine series, six complete practice methods, seven teaching arcs revealing developmental progressions, and circumstance-based guides for immediate application when life demands wisdom rather than theory.</p>
+
+        <p>The original course teachings come from Mingyur Rinpoche, Tim Olmsted, and the traditional sources they draw from including Shantideva's Bodhicaryavatara, Pema Chödrön's contemporary applications, and the rich tradition of Tibetan Buddhist practice instructions. This compilation aims to make that wisdom accessible in under thirty seconds when you need it rather than requiring you to page through lengthy notes hoping to find what might address your current circumstance.</p>
+
+        <p>May this practice benefit all beings.</p>
+    </div>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
